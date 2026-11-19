@@ -12,56 +12,56 @@
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
-      background-color: #eef4fa;
-      color: #1e3a5f;
+      background-color: #f6f4ef;
+      color: #132238;
     }
-    .hero-pastel {
-      background: linear-gradient(120deg, #cfe6fa 0%, #dff3ea 56%, #fde3c8 56.2%, #fbd3a8 100%);
+    .hero-energy {
+      background: linear-gradient(120deg, #13294b 0%, #1d4ed8 54%, #ea580c 54.2%, #f59e0b 100%);
     }
     @media (max-width: 768px) {
-      .hero-pastel {
-        background: linear-gradient(180deg, #cfe6fa 0%, #dff3ea 76%, #fbd3a8 76.2%, #fbd3a8 100%);
+      .hero-energy {
+        background: linear-gradient(180deg, #13294b 0%, #1d4ed8 74%, #ea580c 74.2%, #f59e0b 100%);
       }
     }
   </style>
 </head>
-<body class="bg-[#eef4fa] text-[#1e3a5f] antialiased">
+<body class="bg-[#f6f4ef] text-[#132238] antialiased">
 
-  <!-- HEADER PASTELLO -->
-  <header class="sticky top-0 z-40 bg-[#e6eff8]/95 backdrop-blur border-b border-[#c5d9ec]">
+  <!-- HEADER ENERGIA -->
+  <header class="sticky top-0 z-40 bg-[#efeae0]/95 backdrop-blur border-b border-[#d6cec0]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
-      <!-- LOGO RETE SOLARE PASTELLO -->
+      <!-- LOGO RETE SOLARE ENERGIA -->
       <a href="#home" class="flex items-center gap-3 group shrink-0">
         <svg class="w-11 h-11 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="32" cy="32" r="26" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
-          <circle cx="38" cy="24" r="8" fill="#fdba74"/>
-          <path d="M16 38C22 33 28 33 34 38C40 43 45 43 49 38" stroke="#34d399" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M18 45C24 41 29 41 35 45C40 48.5 44 48.5 48 45" stroke="#1e3a5f" stroke-width="2.2" stroke-linecap="round" opacity="0.65"/>
+          <rect x="5" y="5" width="54" height="54" rx="16" fill="#13294b"/>
+          <circle cx="32" cy="27" r="9" fill="#fbbf24"/>
+          <path d="M32 10V14M32 40V44M15 27H19M45 27H49M20 15L23 18M41 36L44 39M44 15L41 18M23 36L20 39" stroke="#f97316" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M14 47C20 42 26 42 32 47C38 52 44 52 50 47" stroke="#22c55e" stroke-width="3.2" stroke-linecap="round"/>
         </svg>
         <div class="leading-tight">
-          <span class="block text-base sm:text-lg font-extrabold tracking-[0.06em] text-[#1e3a5f] uppercase">
-            Rete <span class="text-[#c26d2d]">Solare</span>
+          <span class="block text-base sm:text-lg font-extrabold tracking-[0.06em] text-[#13294b] uppercase">
+            Rete <span class="text-[#ea580c]">Solare</span>
           </span>
-          <span class="block text-[10px] font-bold tracking-[0.2em] text-[#1f6f5c] uppercase">LUCE · GAS · CONSULENZA</span>
+          <span class="block text-[10px] font-bold tracking-[0.2em] text-[#15803d] uppercase">LUCE · GAS · CONSULENZA</span>
         </div>
       </a>
 
       <!-- Menu Desktop -->
-      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-[#1e3a5f]">
-        <a href="#home" class="hover:text-[#c26d2d] transition">Home</a>
-        <a href="#simulatore" class="hover:text-[#c26d2d] transition">Simulatore</a>
-        <a href="#offerte" class="hover:text-[#c26d2d] transition">Offerte</a>
-        <a href="#azienda" class="hover:text-[#c26d2d] transition">Azienda & Servizi</a>
-        <a href="#info" class="hover:text-[#c26d2d] transition">Info Utili</a>
-        <a href="#contatti" class="hover:text-[#c26d2d] transition">Contatti</a>
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-[#13294b]">
+        <a href="#home" class="hover:text-[#ea580c] transition">Home</a>
+        <a href="#simulatore" class="hover:text-[#ea580c] transition">Simulatore</a>
+        <a href="#offerte" class="hover:text-[#ea580c] transition">Offerte</a>
+        <a href="#azienda" class="hover:text-[#ea580c] transition">Azienda & Servizi</a>
+        <a href="#info" class="hover:text-[#ea580c] transition">Info Utili</a>
+        <a href="#contatti" class="hover:text-[#ea580c] transition">Contatti</a>
       </nav>
 
       <!-- Azioni destra + Hamburger Mobile -->
       <div class="flex items-center gap-2.5">
-        <a href="#simulatore" class="hidden sm:inline-flex items-center px-3.5 py-2 text-xs font-extrabold uppercase tracking-wider rounded-lg bg-[#f9b974] hover:bg-[#f4a654] text-[#1e3a5f] transition">
+        <a href="#simulatore" class="hidden sm:inline-flex items-center px-3.5 py-2 text-xs font-extrabold uppercase tracking-wider rounded-lg bg-[#ea580c] hover:bg-[#c2410c] text-[#fffbeb] transition">
           Calcola Risparmio
         </a>
-        <button id="menuToggle" type="button" aria-label="Apri menu" class="lg:hidden p-2 rounded-lg border border-[#b7d0e8] text-[#1e3a5f] hover:bg-[#d7e8f7]">
+        <button id="menuToggle" type="button" aria-label="Apri menu" class="lg:hidden p-2 rounded-lg border border-[#c7beae] text-[#13294b] hover:bg-[#e3dccf]">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -70,75 +70,75 @@
     </div>
 
     <!-- Menu Mobile -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-[#e6eff8] border-t border-[#c5d9ec] px-6 py-4 space-y-3 text-xs font-bold uppercase tracking-wider text-[#1e3a5f]">
-      <a href="#home" class="block py-1 hover:text-[#c26d2d]">Home</a>
-      <a href="#simulatore" class="block py-1 hover:text-[#c26d2d]">Simulatore</a>
-      <a href="#offerte" class="block py-1 hover:text-[#c26d2d]">Offerte</a>
-      <a href="#azienda" class="block py-1 hover:text-[#c26d2d]">Azienda & Servizi</a>
-      <a href="#info" class="block py-1 hover:text-[#c26d2d]">Info Utili</a>
-      <a href="#contatti" class="block py-1 hover:text-[#c26d2d]">Contatti</a>
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#efeae0] border-t border-[#d6cec0] px-6 py-4 space-y-3 text-xs font-bold uppercase tracking-wider text-[#13294b]">
+      <a href="#home" class="block py-1 hover:text-[#ea580c]">Home</a>
+      <a href="#simulatore" class="block py-1 hover:text-[#ea580c]">Simulatore</a>
+      <a href="#offerte" class="block py-1 hover:text-[#ea580c]">Offerte</a>
+      <a href="#azienda" class="block py-1 hover:text-[#ea580c]">Azienda & Servizi</a>
+      <a href="#info" class="block py-1 hover:text-[#ea580c]">Info Utili</a>
+      <a href="#contatti" class="block py-1 hover:text-[#ea580c]">Contatti</a>
     </div>
   </header>
 
-  <!-- HERO PASTELLO -->
-  <section id="home" class="hero-pastel relative overflow-hidden border-b border-[#c5d9ec]">
+  <!-- HERO ENERGIA -->
+  <section id="home" class="hero-energy relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-6 py-14 md:py-20">
       <div class="grid md:grid-cols-12 gap-10 items-center">
-        <div class="md:col-span-7 text-[#1e3a5f]">
-          <div class="inline-flex items-center gap-2 bg-[#d1fae5] border border-[#86efac] rounded-full px-3.5 py-1 text-[11px] font-bold uppercase tracking-widest text-[#166534] mb-5">
-            <span class="w-2 h-2 rounded-full bg-[#10b981]"></span>
+        <div class="md:col-span-7 text-[#fffbeb]">
+          <div class="inline-flex items-center gap-2 bg-[#0f172a]/35 border border-[#fbbf24]/50 rounded-full px-3.5 py-1 text-[11px] font-bold uppercase tracking-widest text-[#fde047] mb-5">
+            <span class="w-2 h-2 rounded-full bg-[#4ade80]"></span>
             Forniture Luce & Gas · Consulenza Diretta
           </div>
 
-          <p class="text-base sm:text-lg font-medium leading-relaxed max-w-xl mb-4 text-[#284973]">
+          <p class="text-base sm:text-lg font-medium leading-relaxed max-w-xl mb-4 text-[#fffbeb]/95">
             “L’energia più preziosa nasce dalla sinergia tra persone, idee e futuro.”
           </p>
 
-          <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-6 text-[#172f4d]">
-            Gestisci, simula e ottimizza le tue forniture con <span class="text-[#b85d19]">Rete Solare</span>
+          <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-6">
+            Gestisci, simula e ottimizza le tue forniture con <span class="text-[#fde047]">Rete Solare</span>
           </h1>
 
-          <p class="text-sm text-[#33537a] max-w-xl mb-8 leading-relaxed">
+          <p class="text-sm text-[#fffbeb]/90 max-w-xl mb-8 leading-relaxed">
             Preventivi chiari, analisi della bolletta, volture, subentri e supporto dedicato per famiglie, condomini e imprese.
           </p>
 
           <div class="flex flex-wrap gap-3.5">
-            <a href="#simulatore" class="inline-block bg-[#f6ad60] hover:bg-[#eb9b46] text-[#172f4d] text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded-lg shadow-sm transition">
+            <a href="#simulatore" class="inline-block bg-[#fbbf24] hover:bg-[#f59e0b] text-[#132238] text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded-lg shadow transition">
               Avvia Simulatore
             </a>
-            <a href="#offerte" class="inline-block bg-[#9ee2c4] hover:bg-[#82d5b0] text-[#144736] text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded-lg shadow-sm transition">
+            <a href="#offerte" class="inline-block bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded-lg shadow transition">
               Vedi Offerte
             </a>
-            <a href="#contatti" class="inline-block bg-[#dcebfa] hover:bg-[#c8e0f7] border border-[#9fc4e6] text-[#172f4d] text-xs font-bold uppercase tracking-widest px-7 py-3.5 rounded-lg transition">
+            <a href="#contatti" class="inline-block border border-[#fffbeb]/80 text-[#fffbeb] hover:bg-[#fffbeb] hover:text-[#132238] text-xs font-bold uppercase tracking-widest px-7 py-3.5 rounded-lg transition">
               Contatti
             </a>
           </div>
         </div>
 
-        <!-- Card sintesi pastello -->
+        <!-- Card sintesi energia -->
         <div class="md:col-span-5">
-          <div class="bg-[#e3effb] text-[#172f4d] rounded-2xl p-6 sm:p-7 shadow-md border border-[#b9d4ee] border-t-4 border-t-[#6ee7b7]">
-            <div class="flex items-center justify-between border-b border-[#c5d9ec] pb-4 mb-5">
+          <div class="bg-[#10223d] text-[#fffbeb] rounded-2xl p-6 sm:p-7 shadow-xl border-t-4 border-[#fbbf24] ring-1 ring-[#fffbeb]/15">
+            <div class="flex items-center justify-between border-b border-[#fffbeb]/15 pb-4 mb-5">
               <div>
-                <span class="text-[11px] uppercase tracking-widest text-[#b85d19] font-bold">Rete Solare</span>
-                <h2 class="text-lg font-extrabold text-[#172f4d]">Tutto in un Unico Punto</h2>
+                <span class="text-[11px] uppercase tracking-widest text-[#fbbf24] font-bold">Rete Solare</span>
+                <h2 class="text-lg font-extrabold">Tutto in un Unico Punto</h2>
               </div>
-              <div class="w-10 h-10 rounded-xl bg-[#fde3c8] border border-[#f6ad60] flex items-center justify-center text-[#b85d19] font-extrabold">
-                ◎
+              <div class="w-10 h-10 rounded-xl bg-[#f97316]/20 border border-[#fbbf24]/50 flex items-center justify-center text-[#fde047] font-extrabold">
+                ⚡
               </div>
             </div>
 
-            <ul class="space-y-3.5 text-xs sm:text-sm text-[#284973]">
+            <ul class="space-y-3.5 text-xs sm:text-sm text-[#fffbeb]/95">
               <li class="flex items-start gap-3">
-                <span class="w-5 h-5 rounded-full bg-[#a7f3d0] text-[#14532d] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                <span class="w-5 h-5 rounded-full bg-[#16a34a] text-[#fffbeb] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong>Simulatore rapido</strong> su consumi mensili Luce (kWh) e Gas (Smc).</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-5 h-5 rounded-full bg-[#a7f3d0] text-[#14532d] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                <span class="w-5 h-5 rounded-full bg-[#16a34a] text-[#fffbeb] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong>Offerte dedicate</strong> per casa, attività commerciali e aziende.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-5 h-5 rounded-full bg-[#a7f3d0] text-[#14532d] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                <span class="w-5 h-5 rounded-full bg-[#16a34a] text-[#fffbeb] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong>Referente diretto</strong> per volture, subentri e verifica bollette.</span>
               </li>
             </ul>
@@ -149,81 +149,81 @@
   </section>
 
   <!-- SIMULATORE INTERATTIVO -->
-  <section id="simulatore" class="py-16 bg-[#e6f3ec] border-b border-[#c3e2d3]">
+  <section id="simulatore" class="py-16 bg-[#ece7dc] border-b border-[#d6cec0]">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-[#1f7a5c]">Strumento Interattivo</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#172f4d] mt-1">Simulatore di Risparmio Stimato</h2>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#ea580c]">Strumento Interattivo</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#13294b] mt-1">Simulatore di Risparmio Stimato</h2>
         </div>
-        <p class="text-xs sm:text-sm text-[#35556e] max-w-md">
+        <p class="text-xs sm:text-sm text-[#334155] max-w-md">
           Inserisci i tuoi consumi o la spesa attuale per ottenere una stima orientativa mensile e annua.
         </p>
       </div>
 
       <div class="grid lg:grid-cols-12 gap-8 items-start">
-        <div class="lg:col-span-7 bg-[#f3f8fc] rounded-2xl p-6 sm:p-8 border border-[#c6dcef] border-t-4 border-t-[#7cc4fa] shadow-sm space-y-6">
+        <div class="lg:col-span-7 bg-[#fbf9f5] rounded-2xl p-6 sm:p-8 border border-[#d6cec0] border-t-4 border-t-[#1d4ed8] shadow-sm space-y-6">
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
-              <label for="simTipoUtenza" class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-2">Tipologia Utenza</label>
-              <select id="simTipoUtenza" class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none">
+              <label for="simTipoUtenza" class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-2">Tipologia Utenza</label>
+              <select id="simTipoUtenza" class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none">
                 <option value="domestico">Domestico (Casa)</option>
                 <option value="business">Business (Azienda / P.IVA)</option>
               </select>
             </div>
             <div>
-              <label for="simSpesaAttuale" class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-2">Spesa Media Mensile Attuale (€)</label>
-              <input id="simSpesaAttuale" type="number" min="20" max="10000" step="5" value="140" class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none" />
+              <label for="simSpesaAttuale" class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-2">Spesa Media Mensile Attuale (€)</label>
+              <input id="simSpesaAttuale" type="number" min="20" max="10000" step="5" value="140" class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none" />
             </div>
           </div>
 
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
-              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-2">
+              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#13294b] mb-2">
                 <label for="simKwh">Consumo Luce / mese</label>
-                <span id="simKwhLabel" class="text-[#b85d19]">220 kWh</span>
+                <span id="simKwhLabel" class="text-[#ea580c]">220 kWh</span>
               </div>
-              <input id="simKwh" type="range" min="0" max="1500" step="10" value="220" class="w-full accent-[#eb9b46] cursor-pointer" />
+              <input id="simKwh" type="range" min="0" max="1500" step="10" value="220" class="w-full accent-[#ea580c] cursor-pointer" />
             </div>
             <div>
-              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-2">
+              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#13294b] mb-2">
                 <label for="simSmc">Consumo Gas / mese</label>
-                <span id="simSmcLabel" class="text-[#1f7a5c]">80 Smc</span>
+                <span id="simSmcLabel" class="text-[#16a34a]">80 Smc</span>
               </div>
-              <input id="simSmc" type="range" min="0" max="800" step="5" value="80" class="w-full accent-[#34d399] cursor-pointer" />
+              <input id="simSmc" type="range" min="0" max="800" step="5" value="80" class="w-full accent-[#16a34a] cursor-pointer" />
             </div>
           </div>
 
-          <div class="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-[#d6e6f5]">
-            <span class="text-xs text-[#4b6b8a]">
+          <div class="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-[#e5dfd3]">
+            <span class="text-xs text-[#475569]">
               * Stima orientativa basata su parametri indicativi di mercato e profilo selezionato.
             </span>
-            <button type="button" onclick="applicaSimulazioneAlForm()" class="text-xs font-extrabold uppercase tracking-wider px-5 py-2.5 rounded-lg bg-[#cbe3fa] hover:bg-[#b5d6f7] text-[#172f4d] border border-[#96c2ec] transition">
+            <button type="button" onclick="applicaSimulazioneAlForm()" class="text-xs font-extrabold uppercase tracking-wider px-5 py-2.5 rounded-lg bg-[#1d4ed8] hover:bg-[#1e40af] text-[#fffbeb] transition">
               Invia questi dati al consulente →
             </button>
           </div>
         </div>
 
-        <div class="lg:col-span-5 bg-[#dcebfa] text-[#172f4d] rounded-2xl p-6 sm:p-8 shadow-sm border border-[#b4d1ed] border-t-4 border-t-[#f6ad60]">
-          <span class="text-[11px] font-bold uppercase tracking-widest text-[#b85d19]">Stima Indicativa</span>
+        <div class="lg:col-span-5 bg-[#13294b] text-[#fffbeb] rounded-2xl p-6 sm:p-8 shadow-md border-t-4 border-[#fbbf24]">
+          <span class="text-[11px] font-bold uppercase tracking-widest text-[#fbbf24]">Stima Indicativa</span>
           <h3 class="text-xl font-extrabold mt-1 mb-6">Confronto Mensile & Annuo</h3>
 
           <div class="space-y-4">
-            <div class="flex items-center justify-between py-2.5 border-b border-[#bdd7f0]">
-              <span class="text-xs sm:text-sm text-[#33537a]">Spesa attuale stimata / mese</span>
+            <div class="flex items-center justify-between py-2.5 border-b border-[#fffbeb]/15">
+              <span class="text-xs sm:text-sm text-[#fffbeb]/85">Spesa attuale stimata / mese</span>
               <span id="resAttualeMese" class="text-base font-bold">€ 140,00</span>
             </div>
 
-            <div class="flex items-center justify-between py-2.5 border-b border-[#bdd7f0]">
-              <span class="text-xs sm:text-sm text-[#172f4d] font-semibold">Stima con Rete Solare / mese</span>
-              <span id="resNuovaMese" class="text-lg font-extrabold text-[#172f4d]">€ 119,00</span>
+            <div class="flex items-center justify-between py-2.5 border-b border-[#fffbeb]/15">
+              <span class="text-xs sm:text-sm text-[#fde047] font-semibold">Stima con Rete Solare / mese</span>
+              <span id="resNuovaMese" class="text-lg font-extrabold text-[#fde047]">€ 119,00</span>
             </div>
 
-            <div class="bg-[#c9eedc] border border-[#8ce0b9] rounded-xl p-4 mt-4">
-              <div class="text-[11px] font-bold uppercase tracking-widest text-[#155e47]">Risparmio Potenziale Stimato</div>
+            <div class="bg-[#16a34a] rounded-xl p-4 mt-4">
+              <div class="text-[11px] font-bold uppercase tracking-widest text-[#dcfce7]">Risparmio Potenziale Stimato</div>
               <div class="flex items-baseline justify-between mt-1">
-                <span id="resRisparmioMese" class="text-2xl font-extrabold text-[#124938]">€ 21,00 / mese</span>
-                <span id="resRisparmioAnno" class="text-sm font-bold text-[#9a4b12]">€ 252 / anno</span>
+                <span id="resRisparmioMese" class="text-2xl font-extrabold text-[#fffbeb]">€ 21,00 / mese</span>
+                <span id="resRisparmioAnno" class="text-sm font-bold text-[#fde047]">€ 252 / anno</span>
               </div>
             </div>
           </div>
@@ -233,90 +233,90 @@
   </section>
 
   <!-- CATALOGO OFFERTE -->
-  <section id="offerte" class="py-16 bg-[#f7f2eb]">
+  <section id="offerte" class="py-16 bg-[#f6f4ef]">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-[#b85d19]">Soluzioni su Misura</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#172f4d] mt-1">Le Offerte Rete Solare</h2>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#ea580c]">Soluzioni su Misura</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#13294b] mt-1">Le Offerte Rete Solare</h2>
         </div>
 
         <div class="inline-flex flex-wrap gap-2" role="group" aria-label="Filtra offerte">
-          <button type="button" data-filter="all" class="offer-filter active px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#cbe3fa] text-[#172f4d] border border-[#96c2ec] transition">
+          <button type="button" data-filter="all" class="offer-filter active px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#13294b] text-[#fffbeb] transition">
             Tutte
           </button>
-          <button type="button" data-filter="luce" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#ebe4da] text-[#172f4d] hover:bg-[#fde3c8] transition">
+          <button type="button" data-filter="luce" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#e6e0d4] text-[#13294b] hover:bg-[#fde047] transition">
             Luce
           </button>
-          <button type="button" data-filter="gas" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#ebe4da] text-[#172f4d] hover:bg-[#d1fae5] transition">
+          <button type="button" data-filter="gas" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#e6e0d4] text-[#13294b] hover:bg-[#86efac] transition">
             Gas
           </button>
-          <button type="button" data-filter="dual" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#ebe4da] text-[#172f4d] hover:bg-[#ede9fe] transition">
+          <button type="button" data-filter="dual" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#e6e0d4] text-[#13294b] hover:bg-[#93c5fd] transition">
             Dual Fuel
           </button>
         </div>
       </div>
 
       <div class="grid md:grid-cols-3 gap-7" id="offerteGrid">
-        <article data-category="luce" class="offer-card rounded-2xl bg-[#fff4e6] border border-[#f3d5b2] border-t-4 border-t-[#f6ad60] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+        <article data-category="luce" class="offer-card rounded-2xl bg-[#fbf9f5] border border-[#d6cec0] border-t-4 border-t-[#f59e0b] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#fde3c8] text-[#9a4b12]">Luce</span>
-              <span class="text-xs font-bold text-[#5c6f85]">Casa & P.IVA</span>
+              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#fef08a] text-[#854d0e]">Luce</span>
+              <span class="text-xs font-bold text-[#475569]">Casa & P.IVA</span>
             </div>
-            <h3 class="text-xl font-extrabold text-[#172f4d] mb-2">Rete Solare Luce</h3>
-            <p class="text-xs sm:text-sm text-[#385270] leading-relaxed mb-5">
+            <h3 class="text-xl font-extrabold text-[#13294b] mb-2">Rete Solare Luce</h3>
+            <p class="text-xs sm:text-sm text-[#334155] leading-relaxed mb-5">
               Condizioni chiare e trasparenti per l’energia elettrica domestica e aziendale, con attivazione semplice e senza interruzioni.
             </p>
-            <ul class="space-y-2 text-xs text-[#26405e] mb-6">
+            <ul class="space-y-2 text-xs text-[#1e293b] mb-6">
               <li>• Gestione digitale rapida e senza disagi</li>
               <li>• Bolletta leggibile e voci chiare</li>
               <li>• Supporto per volture e subentri</li>
             </ul>
           </div>
-          <button type="button" onclick="selezionaOfferta('Rete Solare Luce')" class="w-full py-3 rounded-xl bg-[#f6ad60] hover:bg-[#eb9b46] text-[#172f4d] text-xs font-extrabold uppercase tracking-wider transition">
+          <button type="button" onclick="selezionaOfferta('Rete Solare Luce')" class="w-full py-3 rounded-xl bg-[#ea580c] hover:bg-[#c2410c] text-[#fffbeb] text-xs font-extrabold uppercase tracking-wider transition">
             Richiedi Offerta Luce
           </button>
         </article>
 
-        <article data-category="gas" class="offer-card rounded-2xl bg-[#eaf9f1] border border-[#bfe8d3] border-t-4 border-t-[#5cd6a5] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+        <article data-category="gas" class="offer-card rounded-2xl bg-[#fbf9f5] border border-[#d6cec0] border-t-4 border-t-[#16a34a] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#c9eedc] text-[#155e47]">Gas</span>
-              <span class="text-xs font-bold text-[#5c6f85]">Casa & Condomini</span>
+              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#bbf7d0] text-[#14532d]">Gas</span>
+              <span class="text-xs font-bold text-[#475569]">Casa & Condomini</span>
             </div>
-            <h3 class="text-xl font-extrabold text-[#172f4d] mb-2">Rete Solare Gas</h3>
-            <p class="text-xs sm:text-sm text-[#385270] leading-relaxed mb-5">
+            <h3 class="text-xl font-extrabold text-[#13294b] mb-2">Rete Solare Gas</h3>
+            <p class="text-xs sm:text-sm text-[#334155] leading-relaxed mb-5">
               Soluzioni pensate per i consumi stagionali di riscaldamento e acqua calda, con consulenza mirata sulle agevolazioni.
             </p>
-            <ul class="space-y-2 text-xs text-[#26405e] mb-6">
+            <ul class="space-y-2 text-xs text-[#1e293b] mb-6">
               <li>• Attenzione ai consumi invernali</li>
               <li>• Verifica aliquote e accise applicabili</li>
               <li>• Consulente dedicato sempre raggiungibile</li>
             </ul>
           </div>
-          <button type="button" onclick="selezionaOfferta('Rete Solare Gas')" class="w-full py-3 rounded-xl bg-[#a7f3d0] hover:bg-[#86efac] text-[#124938] text-xs font-extrabold uppercase tracking-wider transition">
+          <button type="button" onclick="selezionaOfferta('Rete Solare Gas')" class="w-full py-3 rounded-xl bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] text-xs font-extrabold uppercase tracking-wider transition">
             Richiedi Offerta Gas
           </button>
         </article>
 
-        <article data-category="dual" class="offer-card rounded-2xl bg-[#f2efff] border border-[#d6ccf7] border-t-4 border-t-[#a78bfa] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+        <article data-category="dual" class="offer-card rounded-2xl bg-[#fbf9f5] border border-[#d6cec0] border-t-4 border-t-[#1d4ed8] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#ddd6fe] text-[#4c1d95]">Dual Fuel</span>
-              <span class="text-xs font-bold text-[#5c6f85]">Luce + Gas Insieme</span>
+              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#1d4ed8] text-[#fde047]">Dual Fuel</span>
+              <span class="text-xs font-bold text-[#475569]">Luce + Gas Insieme</span>
             </div>
-            <h3 class="text-xl font-extrabold text-[#172f4d] mb-2">Rete Solare Dual</h3>
-            <p class="text-xs sm:text-sm text-[#385270] leading-relaxed mb-5">
+            <h3 class="text-xl font-extrabold text-[#13294b] mb-2">Rete Solare Dual</h3>
+            <p class="text-xs sm:text-sm text-[#334155] leading-relaxed mb-5">
               Un’unica consulenza e un solo referente per gestire insieme luce e gas in modo pratico e ordinato.
             </p>
-            <ul class="space-y-2 text-xs text-[#26405e] mb-6">
+            <ul class="space-y-2 text-xs text-[#1e293b] mb-6">
               <li>• Analisi congiunta delle due forniture</li>
               <li>• Ideale per famiglie, negozi e uffici</li>
               <li>• Assistenza completa su ogni pratica</li>
             </ul>
           </div>
-          <button type="button" onclick="selezionaOfferta('Rete Solare Dual')" class="w-full py-3 rounded-xl bg-[#c4b5fd] hover:bg-[#b19ef9] text-[#2e1065] text-xs font-extrabold uppercase tracking-wider transition">
+          <button type="button" onclick="selezionaOfferta('Rete Solare Dual')" class="w-full py-3 rounded-xl bg-[#1d4ed8] hover:bg-[#1e40af] text-[#fde047] text-xs font-extrabold uppercase tracking-wider transition">
             Richiedi Offerta Dual
           </button>
         </article>
@@ -325,49 +325,49 @@
   </section>
 
   <!-- AZIENDA & SERVIZI -->
-  <section id="azienda" class="py-16 bg-[#e6eff8] border-y border-[#c5d9ec]">
+  <section id="azienda" class="py-16 bg-[#ece7dc] border-y border-[#d6cec0]">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-12 gap-8 items-stretch">
-        <div class="md:col-span-5 bg-[#d5e8fa] border border-[#aecfeb] border-t-4 border-t-[#f6ad60] text-[#172f4d] p-8 sm:p-10 rounded-2xl shadow-sm flex flex-col justify-between">
+        <div class="md:col-span-5 bg-[#13294b] border-t-4 border-[#fbbf24] text-[#fffbeb] p-8 sm:p-10 rounded-2xl shadow-md flex flex-col justify-between">
           <div>
-            <span class="inline-block text-[11px] font-bold uppercase tracking-widest text-[#b85d19] mb-2">Chi Siamo</span>
+            <span class="inline-block text-[11px] font-bold uppercase tracking-widest text-[#fbbf24] mb-2">Chi Siamo</span>
             <h2 class="text-xl sm:text-2xl font-bold mb-4">Rete Solare</h2>
-            <p class="text-sm text-[#2c4b6e] leading-relaxed mb-6">
+            <p class="text-sm text-[#fffbeb]/95 leading-relaxed mb-6">
               Offriamo soluzioni energetiche chiare e su misura per famiglie, professionisti e aziende. Il nostro obiettivo è semplificare la gestione delle forniture luce e gas, con trasparenza e un consulente sempre al tuo fianco.
             </p>
           </div>
-          <div class="pt-4 border-t border-[#b8d4ee] text-xs uppercase tracking-wider font-bold text-[#1f6f5c]">
+          <div class="pt-4 border-t border-[#fffbeb]/15 text-xs uppercase tracking-wider font-semibold text-[#fde047]">
             Trasparenza · Risparmio · Assistenza Diretta
           </div>
         </div>
 
-        <div id="servizi" class="md:col-span-7 bg-[#f3f8fc] border border-[#c6dcef] border-t-4 border-t-[#5cd6a5] p-8 sm:p-10 rounded-2xl flex flex-col justify-center shadow-sm">
-          <h3 class="text-lg font-bold text-[#172f4d] uppercase tracking-wider mb-6 flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#34d399]"></span>
+        <div id="servizi" class="md:col-span-7 bg-[#fbf9f5] border border-[#d6cec0] border-t-4 border-t-[#ea580c] p-8 sm:p-10 rounded-2xl flex flex-col justify-center shadow-sm">
+          <h3 class="text-lg font-bold text-[#13294b] uppercase tracking-wider mb-6 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#ea580c]"></span>
             I Nostri Servizi Luce & Gas
           </h3>
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
-              <h4 class="font-bold text-[#172f4d] mb-1.5">Forniture Luce & Gas</h4>
-              <p class="text-xs sm:text-sm text-[#385270] leading-relaxed">
+              <h4 class="font-bold text-[#13294b] mb-1.5">Forniture Luce & Gas</h4>
+              <p class="text-xs sm:text-sm text-[#334155] leading-relaxed">
                 Soluzioni per casa e impresa, senza costi nascosti e senza interruzioni del servizio.
               </p>
             </div>
             <div>
-              <h4 class="font-bold text-[#172f4d] mb-1.5">Analisi Gratuita Bolletta</h4>
-              <p class="text-xs sm:text-sm text-[#385270] leading-relaxed">
+              <h4 class="font-bold text-[#13294b] mb-1.5">Analisi Gratuita Bolletta</h4>
+              <p class="text-xs sm:text-sm text-[#334155] leading-relaxed">
                 Verifichiamo le tue attuali fatture luce e gas per individuare margini di miglioramento.
               </p>
             </div>
             <div>
-              <h4 class="font-bold text-[#172f4d] mb-1.5">Volture e Subentri</h4>
-              <p class="text-xs sm:text-sm text-[#385270] leading-relaxed">
+              <h4 class="font-bold text-[#13294b] mb-1.5">Volture e Subentri</h4>
+              <p class="text-xs sm:text-sm text-[#334155] leading-relaxed">
                 Gestione rapida di nuove attivazioni, cambi intestatario e variazioni di potenza.
               </p>
             </div>
             <div>
-              <h4 class="font-bold text-[#172f4d] mb-1.5">Consulenza Dedicata</h4>
-              <p class="text-xs sm:text-sm text-[#385270] leading-relaxed">
+              <h4 class="font-bold text-[#13294b] mb-1.5">Consulenza Dedicata</h4>
+              <p class="text-xs sm:text-sm text-[#334155] leading-relaxed">
                 Un referente unico pronto a seguirti senza attese ai call center.
               </p>
             </div>
@@ -378,11 +378,11 @@
   </section>
 
   <!-- INFO UTILI -->
-  <section id="info" class="py-16 bg-[#f7f2eb]">
+  <section id="info" class="py-16 bg-[#f6f4ef]">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-widest text-[#b85d19]">Trasparenza e Tutela</span>
-        <h2 class="text-2xl font-extrabold text-[#1f6f5c] uppercase tracking-widest mt-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#ea580c]">Trasparenza e Tutela</span>
+        <h2 class="text-2xl font-extrabold text-[#16a34a] uppercase tracking-widest mt-1">
           INFO UTILI
         </h2>
       </div>
@@ -390,81 +390,81 @@
       <div class="grid md:grid-cols-12 gap-10 items-start">
         <div class="md:col-span-4 flex flex-col items-center justify-center pt-2 text-center">
           <svg class="w-28 h-28 mb-3" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="26" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
-            <circle cx="38" cy="24" r="8" fill="#fdba74"/>
-            <path d="M16 38C22 33 28 33 34 38C40 43 45 43 49 38" stroke="#34d399" stroke-width="3.2" stroke-linecap="round"/>
-            <path d="M18 45C24 41 29 41 35 45C40 48.5 44 48.5 48 45" stroke="#1e3a5f" stroke-width="2.2" stroke-linecap="round" opacity="0.65"/>
+            <rect x="5" y="5" width="54" height="54" rx="16" fill="#13294b"/>
+            <circle cx="32" cy="27" r="9" fill="#fbbf24"/>
+            <path d="M32 10V14M32 40V44M15 27H19M45 27H49M20 15L23 18M41 36L44 39M44 15L41 18M23 36L20 39" stroke="#f97316" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M14 47C20 42 26 42 32 47C38 52 44 52 50 47" stroke="#22c55e" stroke-width="3.2" stroke-linecap="round"/>
           </svg>
-          <span class="text-xs font-bold uppercase tracking-widest text-[#172f4d]">Documentazione & Tutele</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#13294b]">Documentazione & Tutele</span>
         </div>
 
-        <div class="md:col-span-8 space-y-2.5" id="accordionContainer">
-          <div class="border border-[#9fd8bf] rounded-xl overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#ccefe0] hover:bg-[#b8e7d3] text-[#124938] px-5 py-3.5 text-left text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition">
-              <span class="text-base font-extrabold leading-none text-[#b85d19] symbol">+</span>
+        <div class="md:col-span-8 space-y-2" id="accordionContainer">
+          <div class="border border-[#16a34a] rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+              <span class="text-base font-bold leading-none text-[#fde047] symbol">+</span>
               <span>RECLAMI</span>
             </button>
-            <div class="hidden px-5 py-4 bg-[#f3f8fc] text-xs sm:text-sm text-[#385270] leading-relaxed">
+            <div class="hidden px-5 py-4 bg-[#fbf9f5] text-xs sm:text-sm text-[#334155] leading-relaxed">
               Per inviare un reclamo scritto o una richiesta di informazioni sulla fornitura, puoi contattare il servizio clienti tramite email o modulo dedicato. Riceverai riscontro entro i termini previsti dalla normativa ARERA.
             </div>
           </div>
 
-          <div class="border border-[#9fd8bf] rounded-xl overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#ccefe0] hover:bg-[#b8e7d3] text-[#124938] px-5 py-3.5 text-left text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition">
-              <span class="text-base font-extrabold leading-none text-[#b85d19] symbol">+</span>
+          <div class="border border-[#16a34a] rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+              <span class="text-base font-bold leading-none text-[#fde047] symbol">+</span>
               <span>STANDARD DI QUALITÀ COMMERCIALE</span>
             </button>
-            <div class="hidden px-5 py-4 bg-[#f3f8fc] text-xs sm:text-sm text-[#385270] leading-relaxed">
+            <div class="hidden px-5 py-4 bg-[#fbf9f5] text-xs sm:text-sm text-[#334155] leading-relaxed">
               Rete Solare rispetta gli indicatori di qualità commerciale stabiliti dall’Autorità di Regolazione per Energia Reti e Ambiente (ARERA) per garantire tempi certi nelle risposte, rettifiche di fatturazione e attivazioni.
             </div>
           </div>
 
-          <div class="border border-[#9fd8bf] rounded-xl overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#ccefe0] hover:bg-[#b8e7d3] text-[#124938] px-5 py-3.5 text-left text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition">
-              <span class="text-base font-extrabold leading-none text-[#b85d19] symbol">+</span>
+          <div class="border border-[#16a34a] rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+              <span class="text-base font-bold leading-none text-[#fde047] symbol">+</span>
               <span>CONCILIAZIONE E RISOLUZIONE DELLE CONTROVERSIE</span>
             </button>
-            <div class="hidden px-5 py-4 bg-[#f3f8fc] text-xs sm:text-sm text-[#385270] leading-relaxed">
+            <div class="hidden px-5 py-4 bg-[#fbf9f5] text-xs sm:text-sm text-[#334155] leading-relaxed">
               In caso di mancata risposta o risposta insoddisfacente a un reclamo, il cliente può attivare gratuitamente la procedura presso il Servizio Conciliazione ARERA prima di ricorrere alle vie giudiziarie.
             </div>
           </div>
 
-          <div class="border border-[#9fd8bf] rounded-xl overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#ccefe0] hover:bg-[#b8e7d3] text-[#124938] px-5 py-3.5 text-left text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition">
-              <span class="text-base font-extrabold leading-none text-[#b85d19] symbol">+</span>
+          <div class="border border-[#16a34a] rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+              <span class="text-base font-bold leading-none text-[#fde047] symbol">+</span>
               <span>MIX ENERGETICO</span>
             </button>
-            <div class="hidden px-5 py-4 bg-[#f3f8fc] text-xs sm:text-sm text-[#385270] leading-relaxed">
+            <div class="hidden px-5 py-4 bg-[#fbf9f5] text-xs sm:text-sm text-[#334155] leading-relaxed">
               Informazioni relative alla composizione del mix medio nazionale di fonti primarie utilizzate per la produzione dell’energia elettrica fornita, secondo i dati pubblicati annualmente dal GSE.
             </div>
           </div>
 
-          <div class="border border-[#9fd8bf] rounded-xl overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#ccefe0] hover:bg-[#b8e7d3] text-[#124938] px-5 py-3.5 text-left text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition">
-              <span class="text-base font-extrabold leading-none text-[#b85d19] symbol">+</span>
+          <div class="border border-[#16a34a] rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+              <span class="text-base font-bold leading-none text-[#fde047] symbol">+</span>
               <span>GLOSSARIO ENERGIA</span>
             </button>
-            <div class="hidden px-5 py-4 bg-[#f3f8fc] text-xs sm:text-sm text-[#385270] leading-relaxed">
+            <div class="hidden px-5 py-4 bg-[#fbf9f5] text-xs sm:text-sm text-[#334155] leading-relaxed">
               Consulta il glossario ufficiale dei termini della bolletta luce e gas (POD, PDR, spesa per la materia energia, trasporto e gestione contatore, oneri di sistema) per leggere facilmente ogni voce di spesa.
             </div>
           </div>
 
-          <div class="border border-[#9fd8bf] rounded-xl overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#ccefe0] hover:bg-[#b8e7d3] text-[#124938] px-5 py-3.5 text-left text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition">
-              <span class="text-base font-extrabold leading-none text-[#b85d19] symbol">+</span>
+          <div class="border border-[#16a34a] rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+              <span class="text-base font-bold leading-none text-[#fde047] symbol">+</span>
               <span>IMPOSTE E CONSUMI</span>
             </button>
-            <div class="hidden px-5 py-4 bg-[#f3f8fc] text-xs sm:text-sm text-[#385270] leading-relaxed">
+            <div class="hidden px-5 py-4 bg-[#fbf9f5] text-xs sm:text-sm text-[#334155] leading-relaxed">
               Dettaglio delle aliquote IVA (10% o 22%) e delle accise applicate ai consumi di energia elettrica e gas naturale per utenze domestiche, condominiali e aziendali.
             </div>
           </div>
 
-          <div class="border border-[#9fd8bf] rounded-xl overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#ccefe0] hover:bg-[#b8e7d3] text-[#124938] px-5 py-3.5 text-left text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition">
-              <span class="text-base font-extrabold leading-none text-[#b85d19] symbol">+</span>
+          <div class="border border-[#16a34a] rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#16a34a] hover:bg-[#15803d] text-[#fffbeb] px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+              <span class="text-base font-bold leading-none text-[#fde047] symbol">+</span>
               <span>DATI CATASTALI</span>
             </button>
-            <div class="hidden px-5 py-4 bg-[#f3f8fc] text-xs sm:text-sm text-[#385270] leading-relaxed">
+            <div class="hidden px-5 py-4 bg-[#fbf9f5] text-xs sm:text-sm text-[#334155] leading-relaxed">
               Come previsto dalla Legge Finanziaria, i titolari di contratti di fornitura luce e gas sono tenuti a comunicare i dati catastali identificativi dell’immobile presso cui è attiva l’utenza.
             </div>
           </div>
@@ -474,37 +474,37 @@
   </section>
 
   <!-- CONTATTI -->
-  <section id="contatti" class="py-16 bg-[#e6eff8] border-t border-[#c5d9ec]">
+  <section id="contatti" class="py-16 bg-[#ece7dc] border-t border-[#d6cec0]">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-[#1f7a5c]">Consulenza Gratuita</span>
-        <h2 class="text-2xl font-extrabold text-[#172f4d] uppercase tracking-wider mt-1">Richiedi una Consulenza</h2>
-        <p class="text-sm text-[#385270] mt-2">Compila il modulo per ricevere un'analisi gratuita delle tue forniture luce e gas.</p>
+        <span class="text-xs font-bold uppercase tracking-widest text-[#ea580c]">Consulenza Gratuita</span>
+        <h2 class="text-2xl font-extrabold text-[#13294b] uppercase tracking-wider mt-1">Richiedi una Consulenza</h2>
+        <p class="text-sm text-[#334155] mt-2">Compila il modulo per ricevere un'analisi gratuita delle tue forniture luce e gas.</p>
       </div>
 
-      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="bg-[#f3f8fc] p-8 rounded-2xl border border-[#c6dcef] border-t-4 border-t-[#f6ad60] shadow-sm space-y-5">
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="bg-[#fbf9f5] p-8 rounded-2xl border border-[#d6cec0] border-t-4 border-t-[#ea580c] shadow-sm space-y-5">
         <input type="hidden" name="access_key" value="INSERISCI-LA-TUA-CHIAVE-QUI" />
         <input type="hidden" name="subject" value="Nuovo contatto dal sito Rete Solare" />
 
         <div class="grid sm:grid-cols-2 gap-5">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-1.5">Nome e Cognome *</label>
-            <input type="text" name="name" required placeholder="Mario Rossi" class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none" />
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-1.5">Nome e Cognome *</label>
+            <input type="text" name="name" required placeholder="Mario Rossi" class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none" />
           </div>
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-1.5">Telefono *</label>
-            <input type="tel" name="phone" required placeholder="+39 333 0000000" class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none" />
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-1.5">Telefono *</label>
+            <input type="tel" name="phone" required placeholder="+39 333 0000000" class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none" />
           </div>
         </div>
 
         <div class="grid sm:grid-cols-2 gap-5">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-1.5">Email *</label>
-            <input type="email" name="email" required placeholder="nome@esempio.it" class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none" />
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-1.5">Email *</label>
+            <input type="email" name="email" required placeholder="nome@esempio.it" class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none" />
           </div>
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-1.5">Tipologia Cliente</label>
-            <select id="formTipologia" name="tipologia" class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none">
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-1.5">Tipologia Cliente</label>
+            <select id="formTipologia" name="tipologia" class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none">
               <option value="Privato / Casa">Privato / Casa</option>
               <option value="Azienda / Partita IVA">Azienda / Partita IVA</option>
               <option value="Condominio">Condominio</option>
@@ -513,30 +513,30 @@
         </div>
 
         <div>
-          <label class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-1.5">Offerta o Servizio di Interesse</label>
-          <input id="formOfferta" type="text" name="offerta" placeholder="Es. Rete Solare Dual, Analisi Bolletta, Voltura..." class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none" />
+          <label class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-1.5">Offerta o Servizio di Interesse</label>
+          <input id="formOfferta" type="text" name="offerta" placeholder="Es. Rete Solare Dual, Analisi Bolletta, Voltura..." class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none" />
         </div>
 
         <div>
-          <label class="block text-xs font-bold uppercase tracking-wider text-[#172f4d] mb-1.5">Messaggio</label>
-          <textarea id="formMessaggio" name="message" rows="3" placeholder="Scrivi qui la tua richiesta..." class="w-full border border-[#b9d4ee] rounded-xl px-4 py-2.5 text-sm bg-[#e6eff8] text-[#172f4d] focus:border-[#4b9ce2] focus:outline-none"></textarea>
+          <label class="block text-xs font-bold uppercase tracking-wider text-[#13294b] mb-1.5">Messaggio</label>
+          <textarea id="formMessaggio" name="message" rows="3" placeholder="Scrivi qui la tua richiesta..." class="w-full border border-[#c7beae] rounded-xl px-4 py-2.5 text-sm bg-[#f2efe8] text-[#132238] focus:border-[#1d4ed8] focus:outline-none"></textarea>
         </div>
 
         <div id="formFeedback" class="hidden rounded-xl p-3.5 text-xs font-semibold"></div>
 
-        <button type="submit" class="bg-[#f6ad60] hover:bg-[#eb9b46] text-[#172f4d] text-xs font-extrabold uppercase tracking-widest px-8 py-3.5 rounded-xl transition">
+        <button type="submit" class="bg-[#ea580c] hover:bg-[#c2410c] text-[#fffbeb] text-xs font-extrabold uppercase tracking-widest px-8 py-3.5 rounded-xl transition">
           Invia Richiesta
         </button>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER PASTELLO -->
+  <!-- FOOTER ENERGIA -->
   <footer>
-    <div class="bg-[#d4efe3] text-[#172f4d] py-14 border-t-4 border-[#f6ad60]">
+    <div class="bg-[#16a34a] text-[#fffbeb] py-14 border-t-4 border-[#fbbf24]">
       <div class="max-w-5xl mx-auto px-6">
-        <h3 class="text-lg font-extrabold mb-6 text-[#124938]">Rete Solare</h3>
-        <div class="space-y-4 text-xs sm:text-sm text-[#284973] leading-relaxed">
+        <h3 class="text-lg font-bold mb-6 text-[#fde047]">Rete Solare</h3>
+        <div class="space-y-4 text-xs sm:text-sm text-[#fffbeb]/95 leading-relaxed">
           <div>
             <p>Inserisci qui il tuo indirizzo, CAP Città (PR)</p>
             <p>P.IVA 00000000000</p>
@@ -550,14 +550,14 @@
       </div>
     </div>
 
-    <div class="bg-[#cde3f8] text-[#172f4d] py-5 border-t border-[#b4d1ed]">
+    <div class="bg-[#13294b] text-[#fffbeb] py-5">
       <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-        <p>Copyright © 2026 <span class="font-bold text-[#b85d19]">Rete Solare</span></p>
+        <p>Copyright © 2026 <span class="text-[#fbbf24] font-semibold">Rete Solare</span></p>
         <div class="flex items-center gap-3">
-          <a href="#contatti" aria-label="Instagram" class="w-6 h-6 rounded bg-[#f6ad60] text-[#172f4d] flex items-center justify-center hover:opacity-90 transition">
+          <a href="#contatti" aria-label="Instagram" class="w-6 h-6 rounded bg-[#ea580c] text-[#fffbeb] flex items-center justify-center hover:bg-[#c2410c] transition">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-          <a href="#contatti" aria-label="LinkedIn" class="w-6 h-6 rounded bg-[#f6ad60] text-[#172f4d] flex items-center justify-center hover:opacity-90 transition">
+          <a href="#contatti" aria-label="LinkedIn" class="w-6 h-6 rounded bg-[#ea580c] text-[#fffbeb] flex items-center justify-center hover:bg-[#c2410c] transition">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
           </a>
         </div>
@@ -643,11 +643,11 @@
       btn.addEventListener('click', () => {
         const filter = btn.dataset.filter;
         filterButtons.forEach(b => {
-          b.classList.remove('bg-[#cbe3fa]', 'border', 'border-[#96c2ec]');
-          b.classList.add('bg-[#ebe4da]');
+          b.classList.remove('bg-[#13294b]', 'text-[#fffbeb]');
+          b.classList.add('bg-[#e6e0d4]', 'text-[#13294b]');
         });
-        btn.classList.remove('bg-[#ebe4da]');
-        btn.classList.add('bg-[#cbe3fa]', 'border', 'border-[#96c2ec]');
+        btn.classList.remove('bg-[#e6e0d4]', 'text-[#13294b]');
+        btn.classList.add('bg-[#13294b]', 'text-[#fffbeb]');
 
         offerCards.forEach(card => {
           const match = filter === 'all' || card.dataset.category === filter;
@@ -668,7 +668,7 @@
       const accessKey = contactForm.querySelector('input[name="access_key"]').value;
       if (!accessKey || accessKey === 'INSERISCI-LA-TUA-CHIAVE-QUI') {
         e.preventDefault();
-        formFeedback.className = 'rounded-xl p-3.5 text-xs font-semibold bg-[#fde3c8] text-[#9a4b12] border border-[#f6ad60]';
+        formFeedback.className = 'rounded-xl p-3.5 text-xs font-semibold bg-[#fef08a] text-[#854d0e] border border-[#f59e0b]';
         formFeedback.textContent = 'Inserisci prima la tua chiave access_key di Web3Forms nel codice per inviare realmente il modulo.';
         formFeedback.classList.remove('hidden');
         return;
@@ -680,7 +680,7 @@
         const res = await fetch(contactForm.action, { method: 'POST', body: formData });
         const data = await res.json();
         if (data.success) {
-          formFeedback.className = 'rounded-xl p-3.5 text-xs font-semibold bg-[#c9eedc] text-[#124938] border border-[#5cd6a5]';
+          formFeedback.className = 'rounded-xl p-3.5 text-xs font-semibold bg-[#dcfce7] text-[#14532d] border border-[#16a34a]';
           formFeedback.textContent = 'Richiesta inviata con successo! Ti ricontatteremo al più presto.';
           formFeedback.classList.remove('hidden');
           contactForm.reset();
