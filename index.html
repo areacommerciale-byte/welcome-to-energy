@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Energy — Offerte Luce, Gas e Consulenza</title>
-  <meta name="description" content="Welcome to Energy: soluzioni luce e gas per casa e impresa, simulatore di risparmio, trasparenza ARERA e consulenza dedicata." />
+  <title>Rete Solare srl — Offerte Luce, Gas e Consulenza</title>
+  <meta name="description" content="Rete Solare srl: soluzioni luce e gas per casa e impresa, simulatore di risparmio, trasparenza ARERA e consulenza dedicata." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,43 +13,44 @@
     body {
       font-family: 'Montserrat', sans-serif;
     }
+    /* Taglio diagonale Hero: Blu più chiaro (#1b5e8a) e Senape (#d4a017) */
     .hero-diagonal {
-      background: linear-gradient(110deg, #0f2942 0%, #0f2942 58%, #d4a017 58.2%, #d4a017 100%);
+      background: linear-gradient(110deg, #1b5e8a 0%, #1b5e8a 58%, #d4a017 58.2%, #d4a017 100%);
     }
     @media (max-width: 768px) {
       .hero-diagonal {
-        background: linear-gradient(180deg, #0f2942 0%, #0f2942 78%, #d4a017 78.2%, #d4a017 100%);
+        background: linear-gradient(180deg, #1b5e8a 0%, #1b5e8a 78%, #d4a017 78.2%, #d4a017 100%);
       }
     }
   </style>
 </head>
 <body class="bg-white text-slate-700 antialiased">
 
-  <!-- TOP BAR CON NUOVO LOGO, NAVIGAZIONE E AZIONI RAPIDE -->
+  <!-- TOP BAR CON LOGO, NAVIGAZIONE E AZIONI RAPIDE -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
-      <!-- NUOVO LOGO WELCOME TO ENERGY -->
+      <!-- LOGO RETE SOLARE SRL (Blu Chiaro, Senape e Verde Petrolio) -->
       <a href="#home" class="flex items-center gap-3 group shrink-0">
         <svg class="w-11 h-11 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- Esagono strutturale blu scuro -->
-          <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#0f2942"/>
+          <!-- Esagono strutturale blu più chiaro -->
+          <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#1b5e8a"/>
           <!-- Bordo interno senape -->
           <path d="M32 9L51.5 20.2V43.8L32 55L12.5 43.8V20.2L32 9Z" stroke="#d4a017" stroke-width="2"/>
           <!-- Fulmine / Energia elettrica (Senape) -->
           <path d="M34 15L21 34H31L29 49L44 29H33.5L34 15Z" fill="#f0c44d"/>
-          <!-- Accento foglia/fiamma gas (Verde smeraldo) -->
-          <path d="M43 38C47.5 38 50 41.5 50 45.5C50 49.2 47 51.5 43.5 51.5C41.5 51.5 40 50.5 39 49C41.5 48.2 43 45.8 43 42.5C43 40.5 42.5 39.2 43 38Z" fill="#22c55e"/>
+          <!-- Accento foglia/fiamma gas (Verde petrolio luminoso) -->
+          <path d="M43 38C47.5 38 50 41.5 50 45.5C50 49.2 47 51.5 43.5 51.5C41.5 51.5 40 50.5 39 49C41.5 48.2 43 45.8 43 42.5C43 40.5 42.5 39.2 43 38Z" fill="#2aa198"/>
         </svg>
         <div class="leading-tight">
-          <span class="block text-[10px] font-bold tracking-[0.26em] text-[#1f7a4c] uppercase">WELCOME TO</span>
-          <span class="block text-base sm:text-lg font-extrabold tracking-[0.14em] text-[#0f2942] uppercase">
-            ENERGY<span class="text-[#d4a017]">.</span>
+          <span class="block text-base sm:text-lg font-extrabold tracking-[0.12em] text-[#1b5e8a] uppercase">
+            RETE SOLARE<span class="text-[#d4a017]">.</span>
           </span>
+          <span class="block text-[10px] font-bold tracking-[0.26em] text-[#135d66] uppercase">SRL</span>
         </div>
       </a>
 
       <!-- Menu Desktop -->
-      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-[#0f2942]">
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-[#1b5e8a]">
         <a href="#home" class="hover:text-[#d4a017] transition">Home</a>
         <a href="#simulatore" class="hover:text-[#d4a017] transition">Simulatore</a>
         <a href="#offerte" class="hover:text-[#d4a017] transition">Offerte</a>
@@ -60,10 +61,10 @@
 
       <!-- Azioni destra + Hamburger Mobile -->
       <div class="flex items-center gap-2.5">
-        <a href="#simulatore" class="hidden sm:inline-flex items-center px-3.5 py-2 text-xs font-extrabold uppercase tracking-wider rounded bg-[#d4a017] hover:bg-[#b88912] text-[#0f2942] transition">
+        <a href="#simulatore" class="hidden sm:inline-flex items-center px-3.5 py-2 text-xs font-extrabold uppercase tracking-wider rounded bg-[#d4a017] hover:bg-[#b88912] text-[#113d5a] transition">
           Calcola Risparmio
         </a>
-        <button id="menuToggle" type="button" aria-label="Apri menu" class="lg:hidden p-2 rounded border border-slate-200 text-[#0f2942] hover:bg-slate-50">
+        <button id="menuToggle" type="button" aria-label="Apri menu" class="lg:hidden p-2 rounded border border-slate-200 text-[#1b5e8a] hover:bg-slate-50">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -72,7 +73,7 @@
     </div>
 
     <!-- Menu Mobile -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3 text-xs font-bold uppercase tracking-wider text-[#0f2942]">
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3 text-xs font-bold uppercase tracking-wider text-[#1b5e8a]">
       <a href="#home" class="block py-1 hover:text-[#d4a017]">Home</a>
       <a href="#simulatore" class="block py-1 hover:text-[#d4a017]">Simulatore</a>
       <a href="#offerte" class="block py-1 hover:text-[#d4a017]">Offerte</a>
@@ -82,13 +83,13 @@
     </div>
   </header>
 
-  <!-- HERO CON TAGLIO DIAGONALE BLU SCURO / SENAPE -->
+  <!-- HERO CON TAGLIO DIAGONALE BLU CHIARO / SENAPE -->
   <section id="home" class="hero-diagonal relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-6 py-14 md:py-20">
       <div class="grid md:grid-cols-12 gap-10 items-center">
         <div class="md:col-span-7 text-white">
-          <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3.5 py-1 text-[11px] font-bold uppercase tracking-widest text-[#f0c44d] mb-5">
-            <span class="w-2 h-2 rounded-full bg-[#22c55e]"></span>
+          <div class="inline-flex items-center gap-2 bg-white/15 border border-white/25 rounded-full px-3.5 py-1 text-[11px] font-bold uppercase tracking-widest text-[#f0c44d] mb-5">
+            <span class="w-2 h-2 rounded-full bg-[#2aa198]"></span>
             Luce · Gas · Consulenza Dedicata
           </div>
 
@@ -97,21 +98,21 @@
           </p>
 
           <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-6">
-            Controlla, simula e ottimizza le tue bollette con <span class="text-[#f0c44d]">Welcome to Energy</span>
+            Controlla, simula e ottimizza le tue bollette con <span class="text-[#f0c44d]">Rete Solare srl</span>
           </h1>
 
-          <p class="text-sm text-white/85 max-w-xl mb-8 leading-relaxed">
+          <p class="text-sm text-white/90 max-w-xl mb-8 leading-relaxed">
             Dal preventivo rapido alla gestione di volture, subentri e forniture business: tutto in un unico punto chiaro, trasparente e senza attese.
           </p>
 
           <div class="flex flex-wrap gap-3.5">
-            <a href="#simulatore" class="inline-block bg-[#d4a017] hover:bg-[#b88912] text-[#0f2942] text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded shadow transition">
+            <a href="#simulatore" class="inline-block bg-[#d4a017] hover:bg-[#b88912] text-[#113d5a] text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded shadow transition">
               Avvia Simulatore
             </a>
-            <a href="#offerte" class="inline-block bg-[#1f7a4c] hover:bg-[#175f3b] text-white text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded shadow transition">
+            <a href="#offerte" class="inline-block bg-[#135d66] hover:bg-[#0e474e] text-white text-xs font-extrabold uppercase tracking-widest px-7 py-3.5 rounded shadow transition">
               Vedi Offerte
             </a>
-            <a href="#contatti" class="inline-block border border-white text-white hover:bg-white hover:text-[#0f2942] text-xs font-bold uppercase tracking-widest px-7 py-3.5 rounded transition">
+            <a href="#contatti" class="inline-block border border-white text-white hover:bg-white hover:text-[#1b5e8a] text-xs font-bold uppercase tracking-widest px-7 py-3.5 rounded transition">
               Contatti
             </a>
           </div>
@@ -119,10 +120,10 @@
 
         <!-- Card di sintesi visiva a destra -->
         <div class="md:col-span-5">
-          <div class="bg-[#0f2942] text-white rounded-xl p-6 sm:p-7 shadow-2xl border-t-4 border-[#1f7a4c]">
-            <div class="flex items-center justify-between border-b border-white/15 pb-4 mb-5">
+          <div class="bg-[#1b5e8a] text-white rounded-xl p-6 sm:p-7 shadow-2xl border-t-4 border-[#135d66] ring-1 ring-white/20">
+            <div class="flex items-center justify-between border-b border-white/20 pb-4 mb-5">
               <div>
-                <span class="text-[11px] uppercase tracking-widest text-[#f0c44d] font-bold">Nuova Identità</span>
+                <span class="text-[11px] uppercase tracking-widest text-[#f0c44d] font-bold">Rete Solare srl</span>
                 <h2 class="text-lg font-extrabold">Energia Chiara & Diretta</h2>
               </div>
               <div class="w-10 h-10 rounded-lg bg-[#d4a017]/20 border border-[#d4a017] flex items-center justify-center text-[#f0c44d] font-extrabold">
@@ -130,17 +131,17 @@
               </div>
             </div>
 
-            <ul class="space-y-3.5 text-xs sm:text-sm text-white/90">
+            <ul class="space-y-3.5 text-xs sm:text-sm text-white/95">
               <li class="flex items-start gap-3">
-                <span class="w-5 h-5 rounded-full bg-[#1f7a4c] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                <span class="w-5 h-5 rounded-full bg-[#135d66] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong>Simulazione immediata</strong> su consumi mensili Luce (kWh) e Gas (Smc).</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-5 h-5 rounded-full bg-[#1f7a4c] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                <span class="w-5 h-5 rounded-full bg-[#135d66] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong>Offerte dedicate</strong> per famiglie, condomini, partite IVA e aziende.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-5 h-5 rounded-full bg-[#1f7a4c] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                <span class="w-5 h-5 rounded-full bg-[#135d66] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong>Assistenza umana</strong> su pratiche, volture, subentri e verifiche bolletta.</span>
               </li>
             </ul>
@@ -150,13 +151,13 @@
     </div>
   </section>
 
-  <!-- NUOVA FUNZIONE 1: SIMULATORE INTERATTIVO LUCE & GAS -->
+  <!-- SIMULATORE INTERATTIVO LUCE & GAS -->
   <section id="simulatore" class="py-16 bg-slate-50 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-[#1f7a4c]">Strumento Interattivo</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0f2942] mt-1">Simulatore di Risparmio Stimato</h2>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#135d66]">Strumento Interattivo</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1b5e8a] mt-1">Simulatore di Risparmio Stimato</h2>
         </div>
         <p class="text-xs sm:text-sm text-slate-600 max-w-md">
           Inserisci una stima dei tuoi consumi o della spesa attuale per ottenere un calcolo indicativo immediato.
@@ -165,24 +166,24 @@
 
       <div class="grid lg:grid-cols-12 gap-8 items-start">
         <!-- Controlli Simulatore -->
-        <div class="lg:col-span-7 bg-white rounded-xl p-6 sm:p-8 border border-slate-200 border-t-4 border-t-[#0f2942] shadow-sm space-y-6">
+        <div class="lg:col-span-7 bg-white rounded-xl p-6 sm:p-8 border border-slate-200 border-t-4 border-t-[#1b5e8a] shadow-sm space-y-6">
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
-              <label for="simTipoUtenza" class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-2">Tipologia Utenza</label>
-              <select id="simTipoUtenza" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm bg-white focus:border-[#0f2942] focus:outline-none">
+              <label for="simTipoUtenza" class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-2">Tipologia Utenza</label>
+              <select id="simTipoUtenza" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm bg-white focus:border-[#1b5e8a] focus:outline-none">
                 <option value="domestico">Domestico (Casa)</option>
                 <option value="business">Business (Azienda / P.IVA)</option>
               </select>
             </div>
             <div>
-              <label for="simSpesaAttuale" class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-2">Spesa Media Mensile Attuale (€)</label>
-              <input id="simSpesaAttuale" type="number" min="20" max="10000" step="5" value="140" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#0f2942] focus:outline-none" />
+              <label for="simSpesaAttuale" class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-2">Spesa Media Mensile Attuale (€)</label>
+              <input id="simSpesaAttuale" type="number" min="20" max="10000" step="5" value="140" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#1b5e8a] focus:outline-none" />
             </div>
           </div>
 
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
-              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-2">
+              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-2">
                 <label for="simKwh">Consumo Luce / mese</label>
                 <span id="simKwhLabel" class="text-[#d4a017]">220 kWh</span>
               </div>
@@ -190,11 +191,11 @@
             </div>
 
             <div>
-              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-2">
+              <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-2">
                 <label for="simSmc">Consumo Gas / mese</label>
-                <span id="simSmcLabel" class="text-[#1f7a4c]">80 Smc</span>
+                <span id="simSmcLabel" class="text-[#135d66]">80 Smc</span>
               </div>
-              <input id="simSmc" type="range" min="0" max="800" step="5" value="80" class="w-full accent-[#1f7a4c] cursor-pointer" />
+              <input id="simSmc" type="range" min="0" max="800" step="5" value="80" class="w-full accent-[#135d66] cursor-pointer" />
             </div>
           </div>
 
@@ -202,29 +203,29 @@
             <span class="text-xs text-slate-500">
               * Stima orientativa basata su parametri indicativi di mercato e profilo selezionato.
             </span>
-            <button type="button" onclick="applicaSimulazioneAlForm()" class="text-xs font-extrabold uppercase tracking-wider px-5 py-2.5 rounded bg-[#0f2942] hover:bg-[#1b436b] text-[#f0c44d] transition">
+            <button type="button" onclick="applicaSimulazioneAlForm()" class="text-xs font-extrabold uppercase tracking-wider px-5 py-2.5 rounded bg-[#1b5e8a] hover:bg-[#2979ad] text-[#f0c44d] transition">
               Invia questi dati al consulente →
             </button>
           </div>
         </div>
 
         <!-- Risultato Simulatore -->
-        <div class="lg:col-span-5 bg-[#0f2942] text-white rounded-xl p-6 sm:p-8 shadow-lg border-t-4 border-[#d4a017]">
+        <div class="lg:col-span-5 bg-[#1b5e8a] text-white rounded-xl p-6 sm:p-8 shadow-lg border-t-4 border-[#d4a017]">
           <span class="text-[11px] font-bold uppercase tracking-widest text-[#f0c44d]">Stima Indicativa</span>
           <h3 class="text-xl font-extrabold mt-1 mb-6">Confronto Mensile & Annuo</h3>
 
           <div class="space-y-4">
-            <div class="flex items-center justify-between py-2.5 border-b border-white/15">
-              <span class="text-xs sm:text-sm text-white/80">Spesa attuale stimata / mese</span>
+            <div class="flex items-center justify-between py-2.5 border-b border-white/20">
+              <span class="text-xs sm:text-sm text-white/85">Spesa attuale stimata / mese</span>
               <span id="resAttualeMese" class="text-base font-bold">€ 140,00</span>
             </div>
 
-            <div class="flex items-center justify-between py-2.5 border-b border-white/15">
-              <span class="text-xs sm:text-sm text-[#f0c44d] font-semibold">Stima con Welcome to Energy / mese</span>
+            <div class="flex items-center justify-between py-2.5 border-b border-white/20">
+              <span class="text-xs sm:text-sm text-[#f0c44d] font-semibold">Stima con Rete Solare srl / mese</span>
               <span id="resNuovaMese" class="text-lg font-extrabold text-[#f0c44d]">€ 119,00</span>
             </div>
 
-            <div class="bg-[#1f7a4c] rounded-lg p-4 mt-4">
+            <div class="bg-[#135d66] rounded-lg p-4 mt-4">
               <div class="text-[11px] font-bold uppercase tracking-widest text-white/90">Risparmio Potenziale Stimato</div>
               <div class="flex items-baseline justify-between mt-1">
                 <span id="resRisparmioMese" class="text-2xl font-extrabold text-white">€ 21,00 / mese</span>
@@ -237,27 +238,27 @@
     </div>
   </section>
 
-  <!-- NUOVA FUNZIONE 2: CATALOGO OFFERTE FILTRABILE -->
+  <!-- CATALOGO OFFERTE FILTRABILE -->
   <section id="offerte" class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
         <div>
           <span class="text-xs font-bold uppercase tracking-widest text-[#d4a017]">Soluzioni su Misura</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0f2942] mt-1">Le Nostre Offerte Luce & Gas</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1b5e8a] mt-1">Le Nostre Offerte Luce & Gas</h2>
         </div>
 
         <!-- Filtri -->
         <div class="inline-flex flex-wrap gap-2" role="group" aria-label="Filtra offerte">
-          <button type="button" data-filter="all" class="offer-filter active px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#0f2942] text-white transition">
+          <button type="button" data-filter="all" class="offer-filter active px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-[#1b5e8a] text-white transition">
             Tutte
           </button>
-          <button type="button" data-filter="luce" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-slate-100 text-[#0f2942] hover:bg-[#d4a017]/20 transition">
+          <button type="button" data-filter="luce" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-slate-100 text-[#1b5e8a] hover:bg-[#d4a017]/20 transition">
             Luce
           </button>
-          <button type="button" data-filter="gas" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-slate-100 text-[#0f2942] hover:bg-[#1f7a4c]/20 transition">
+          <button type="button" data-filter="gas" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-slate-100 text-[#1b5e8a] hover:bg-[#135d66]/15 transition">
             Gas
           </button>
-          <button type="button" data-filter="dual" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-slate-100 text-[#0f2942] hover:bg-slate-200 transition">
+          <button type="button" data-filter="dual" class="offer-filter px-4 py-2 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-slate-100 text-[#1b5e8a] hover:bg-slate-200 transition">
             Dual Fuel
           </button>
         </div>
@@ -268,10 +269,10 @@
         <article data-category="luce" class="offer-card rounded-xl border border-slate-200 border-t-4 border-t-[#d4a017] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#d4a017]/20 text-[#0f2942]">⚡ Luce</span>
+              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#d4a017]/20 text-[#113d5a]">⚡ Luce</span>
               <span class="text-xs font-bold text-slate-500">Casa & P.IVA</span>
             </div>
-            <h3 class="text-xl font-extrabold text-[#0f2942] mb-2">Energy Luce Smart</h3>
+            <h3 class="text-xl font-extrabold text-[#1b5e8a] mb-2">Rete Solare Luce Smart</h3>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
               Indicizzata al prezzo all’ingrosso con trasparenza sulle componenti di dispacciamento e gestione chiara del contratto.
             </p>
@@ -281,19 +282,19 @@
               <li>• Supporto dedicato per volture e subentri</li>
             </ul>
           </div>
-          <button type="button" onclick="selezionaOfferta('Energy Luce Smart')" class="w-full py-3 rounded-lg bg-[#d4a017] hover:bg-[#b88912] text-[#0f2942] text-xs font-extrabold uppercase tracking-wider transition">
+          <button type="button" onclick="selezionaOfferta('Rete Solare Luce Smart')" class="w-full py-3 rounded-lg bg-[#d4a017] hover:bg-[#b88912] text-[#113d5a] text-xs font-extrabold uppercase tracking-wider transition">
             Richiedi Offerta Luce
           </button>
         </article>
 
         <!-- Card Gas -->
-        <article data-category="gas" class="offer-card rounded-xl border border-slate-200 border-t-4 border-t-[#1f7a4c] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+        <article data-category="gas" class="offer-card rounded-xl border border-slate-200 border-t-4 border-t-[#135d66] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#1f7a4c]/15 text-[#1f7a4c]">🔥 Gas</span>
+              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#135d66]/15 text-[#135d66]">🔥 Gas</span>
               <span class="text-xs font-bold text-slate-500">Casa & Condomini</span>
             </div>
-            <h3 class="text-xl font-extrabold text-[#0f2942] mb-2">Energy Gas Sicuro</h3>
+            <h3 class="text-xl font-extrabold text-[#1b5e8a] mb-2">Rete Solare Gas Sicuro</h3>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
               Studia i profili stagionali di riscaldamento e acqua calda con condizioni chiare e consulenza mirata sui consumi.
             </p>
@@ -303,19 +304,19 @@
               <li>• Consulente di riferimento sempre disponibile</li>
             </ul>
           </div>
-          <button type="button" onclick="selezionaOfferta('Energy Gas Sicuro')" class="w-full py-3 rounded-lg bg-[#1f7a4c] hover:bg-[#175f3b] text-white text-xs font-extrabold uppercase tracking-wider transition">
+          <button type="button" onclick="selezionaOfferta('Rete Solare Gas Sicuro')" class="w-full py-3 rounded-lg bg-[#135d66] hover:bg-[#0e474e] text-white text-xs font-extrabold uppercase tracking-wider transition">
             Richiedi Offerta Gas
           </button>
         </article>
 
         <!-- Card Dual Fuel -->
-        <article data-category="dual" class="offer-card rounded-xl border border-slate-200 border-t-4 border-t-[#0f2942] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+        <article data-category="dual" class="offer-card rounded-xl border border-slate-200 border-t-4 border-t-[#1b5e8a] p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#0f2942] text-[#f0c44d]">⚡🔥 Dual Fuel</span>
+              <span class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-[#1b5e8a] text-[#f0c44d]">⚡🔥 Dual Fuel</span>
               <span class="text-xs font-bold text-slate-500">Luce + Gas Insieme</span>
             </div>
-            <h3 class="text-xl font-extrabold text-[#0f2942] mb-2">Energy Pack Tutto in Uno</h3>
+            <h3 class="text-xl font-extrabold text-[#1b5e8a] mb-2">Rete Solare Pack Tutto in Uno</h3>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
               Unifica la gestione di luce e gas in un’unica analisi completa per semplificare pratiche, scadenze e controllo costi.
             </p>
@@ -325,7 +326,7 @@
               <li>• Un solo referente per ogni necessità</li>
             </ul>
           </div>
-          <button type="button" onclick="selezionaOfferta('Energy Pack Tutto in Uno')" class="w-full py-3 rounded-lg bg-[#0f2942] hover:bg-[#1b436b] text-[#f0c44d] text-xs font-extrabold uppercase tracking-wider transition">
+          <button type="button" onclick="selezionaOfferta('Rete Solare Pack Tutto in Uno')" class="w-full py-3 rounded-lg bg-[#1b5e8a] hover:bg-[#2979ad] text-[#f0c44d] text-xs font-extrabold uppercase tracking-wider transition">
             Richiedi Pack Dual
           </button>
         </article>
@@ -337,29 +338,29 @@
   <section id="azienda" class="py-16 bg-slate-50 border-y border-slate-200">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-12 gap-8 items-stretch">
-        <!-- Box Blu Scuro Azienda -->
-        <div class="md:col-span-5 bg-[#0f2942] border-t-4 border-[#d4a017] text-white p-8 sm:p-10 rounded-xl shadow-md flex flex-col justify-between">
+        <!-- Box Blu Chiaro Azienda -->
+        <div class="md:col-span-5 bg-[#1b5e8a] border-t-4 border-[#d4a017] text-white p-8 sm:p-10 rounded-xl shadow-md flex flex-col justify-between">
           <div>
             <span class="inline-block text-[11px] font-bold uppercase tracking-widest text-[#f0c44d] mb-2">Chi Siamo</span>
-            <h2 class="text-xl sm:text-2xl font-bold mb-4">Welcome to Energy</h2>
-            <p class="text-sm text-white/90 leading-relaxed mb-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-4">Rete Solare srl</h2>
+            <p class="text-sm text-white/95 leading-relaxed mb-6">
               Offriamo soluzioni energetiche trasparenti e su misura per famiglie, professionisti e aziende. Il nostro obiettivo è semplificare la gestione delle forniture luce e gas, garantendo tariffe competitive e un consulente sempre al tuo fianco.
             </p>
           </div>
-          <div class="pt-4 border-t border-white/15 text-xs uppercase tracking-wider font-semibold text-[#f0c44d]">
+          <div class="pt-4 border-t border-white/20 text-xs uppercase tracking-wider font-semibold text-[#f0c44d]">
             Trasparenza · Risparmio · Assistenza Diretta
           </div>
         </div>
 
         <!-- Sezione Servizi -->
-        <div id="servizi" class="md:col-span-7 bg-white border border-slate-200 border-t-4 border-t-[#1f7a4c] p-8 sm:p-10 rounded-xl flex flex-col justify-center shadow-sm">
-          <h3 class="text-lg font-bold text-[#0f2942] uppercase tracking-wider mb-6 flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#1f7a4c]"></span>
+        <div id="servizi" class="md:col-span-7 bg-white border border-slate-200 border-t-4 border-t-[#135d66] p-8 sm:p-10 rounded-xl flex flex-col justify-center shadow-sm">
+          <h3 class="text-lg font-bold text-[#1b5e8a] uppercase tracking-wider mb-6 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#135d66]"></span>
             I Nostri Servizi Luce & Gas
           </h3>
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
-              <h4 class="font-bold text-[#0f2942] mb-1.5 flex items-center gap-2">
+              <h4 class="font-bold text-[#1b5e8a] mb-1.5 flex items-center gap-2">
                 <span class="text-[#d4a017]">⚡</span> Forniture Luce & Gas
               </h4>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -367,15 +368,15 @@
               </p>
             </div>
             <div>
-              <h4 class="font-bold text-[#0f2942] mb-1.5 flex items-center gap-2">
-                <span class="text-[#1f7a4c]">🔥</span> Analisi Gratuita Bolletta
+              <h4 class="font-bold text-[#1b5e8a] mb-1.5 flex items-center gap-2">
+                <span class="text-[#135d66]">🔥</span> Analisi Gratuita Bolletta
               </h4>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Verifichiamo gratuitamente le tue attuali fatture luce e gas per individuare margini di risparmio reali.
               </p>
             </div>
             <div>
-              <h4 class="font-bold text-[#0f2942] mb-1.5 flex items-center gap-2">
+              <h4 class="font-bold text-[#1b5e8a] mb-1.5 flex items-center gap-2">
                 <span class="text-[#d4a017]">⚡</span> Volture e Subentri
               </h4>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -383,8 +384,8 @@
               </p>
             </div>
             <div>
-              <h4 class="font-bold text-[#0f2942] mb-1.5 flex items-center gap-2">
-                <span class="text-[#1f7a4c]">🔥</span> Consulenza Dedicata
+              <h4 class="font-bold text-[#1b5e8a] mb-1.5 flex items-center gap-2">
+                <span class="text-[#135d66]">🔥</span> Consulenza Dedicata
               </h4>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Un referente unico pronto a rispondere alle tue esigenze senza attese ai call center.
@@ -396,32 +397,32 @@
     </div>
   </section>
 
-  <!-- SEZIONE INFO CON ACCORDION VERDI -->
+  <!-- SEZIONE INFO CON ACCORDION VERDE PETROLIO -->
   <section id="info" class="py-16 bg-white">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
         <span class="text-xs font-bold uppercase tracking-widest text-[#d4a017]">Trasparenza e Tutela</span>
-        <h2 class="text-2xl font-extrabold text-[#1f7a4c] uppercase tracking-widest mt-1">
+        <h2 class="text-2xl font-extrabold text-[#135d66] uppercase tracking-widest mt-1">
           INFO UTILI
         </h2>
       </div>
 
       <div class="grid md:grid-cols-12 gap-10 items-start">
-        <!-- Nuovo marchio a sinistra -->
+        <!-- Marchio a sinistra -->
         <div class="md:col-span-4 flex flex-col items-center justify-center pt-2 text-center">
           <svg class="w-28 h-28 mb-3" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#0f2942"/>
+            <path d="M32 4L56 18V46L32 60L8 46V18L32 4Z" fill="#1b5e8a"/>
             <path d="M32 9L51.5 20.2V43.8L32 55L12.5 43.8V20.2L32 9Z" stroke="#d4a017" stroke-width="2"/>
             <path d="M34 15L21 34H31L29 49L44 29H33.5L34 15Z" fill="#f0c44d"/>
-            <path d="M43 38C47.5 38 50 41.5 50 45.5C50 49.2 47 51.5 43.5 51.5C41.5 51.5 40 50.5 39 49C41.5 48.2 43 45.8 43 42.5C43 40.5 42.5 39.2 43 38Z" fill="#22c55e"/>
+            <path d="M43 38C47.5 38 50 41.5 50 45.5C50 49.2 47 51.5 43.5 51.5C41.5 51.5 40 50.5 39 49C41.5 48.2 43 45.8 43 42.5C43 40.5 42.5 39.2 43 38Z" fill="#2aa198"/>
           </svg>
-          <span class="text-xs font-bold uppercase tracking-widest text-[#0f2942]">Documentazione & Tutele</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#1b5e8a]">Documentazione & Tutele</span>
         </div>
 
-        <!-- Barre verdi espandibili a destra -->
+        <!-- Barre verde petrolio espandibili a destra -->
         <div class="md:col-span-8 space-y-2" id="accordionContainer">
-          <div class="border border-[#1f7a4c] rounded overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#1f7a4c] hover:bg-[#175f3b] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+          <div class="border border-[#135d66] rounded overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#135d66] hover:bg-[#0e474e] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
               <span class="text-base font-bold leading-none text-[#f0c44d] symbol">+</span>
               <span>RECLAMI</span>
             </button>
@@ -430,18 +431,18 @@
             </div>
           </div>
 
-          <div class="border border-[#1f7a4c] rounded overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#1f7a4c] hover:bg-[#175f3b] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+          <div class="border border-[#135d66] rounded overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#135d66] hover:bg-[#0e474e] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
               <span class="text-base font-bold leading-none text-[#f0c44d] symbol">+</span>
               <span>STANDARD DI QUALITÀ COMMERCIALE</span>
             </button>
             <div class="hidden px-5 py-4 bg-slate-50 text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Welcome to Energy rispetta gli indicatori di qualità commerciale stabiliti dall’Autorità di Regolazione per Energia Reti e Ambiente (ARERA) per garantire tempi certi nelle risposte, rettifiche di fatturazione e attivazioni.
+              Rete Solare srl rispetta gli indicatori di qualità commerciale stabiliti dall’Autorità di Regolazione per Energia Reti e Ambiente (ARERA) per garantire tempi certi nelle risposte, rettifiche di fatturazione e attivazioni.
             </div>
           </div>
 
-          <div class="border border-[#1f7a4c] rounded overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#1f7a4c] hover:bg-[#175f3b] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+          <div class="border border-[#135d66] rounded overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#135d66] hover:bg-[#0e474e] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
               <span class="text-base font-bold leading-none text-[#f0c44d] symbol">+</span>
               <span>CONCILIAZIONE E RISOLUZIONE DELLE CONTROVERSIE</span>
             </button>
@@ -450,8 +451,8 @@
             </div>
           </div>
 
-          <div class="border border-[#1f7a4c] rounded overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#1f7a4c] hover:bg-[#175f3b] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+          <div class="border border-[#135d66] rounded overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#135d66] hover:bg-[#0e474e] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
               <span class="text-base font-bold leading-none text-[#f0c44d] symbol">+</span>
               <span>MIX ENERGETICO</span>
             </button>
@@ -460,8 +461,8 @@
             </div>
           </div>
 
-          <div class="border border-[#1f7a4c] rounded overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#1f7a4c] hover:bg-[#175f3b] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+          <div class="border border-[#135d66] rounded overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#135d66] hover:bg-[#0e474e] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
               <span class="text-base font-bold leading-none text-[#f0c44d] symbol">+</span>
               <span>GLOSSARIO ENERGIA</span>
             </button>
@@ -470,8 +471,8 @@
             </div>
           </div>
 
-          <div class="border border-[#1f7a4c] rounded overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#1f7a4c] hover:bg-[#175f3b] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+          <div class="border border-[#135d66] rounded overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#135d66] hover:bg-[#0e474e] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
               <span class="text-base font-bold leading-none text-[#f0c44d] symbol">+</span>
               <span>IMPOSTE E CONSUMI</span>
             </button>
@@ -480,8 +481,8 @@
             </div>
           </div>
 
-          <div class="border border-[#1f7a4c] rounded overflow-hidden">
-            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#1f7a4c] hover:bg-[#175f3b] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
+          <div class="border border-[#135d66] rounded overflow-hidden">
+            <button type="button" onclick="toggleAccordion(this)" class="w-full bg-[#135d66] hover:bg-[#0e474e] text-white px-5 py-3.5 text-left text-xs font-semibold tracking-wider uppercase flex items-center gap-3 transition">
               <span class="text-base font-bold leading-none text-[#f0c44d] symbol">+</span>
               <span>DATI CATASTALI</span>
             </button>
@@ -498,34 +499,34 @@
   <section id="contatti" class="py-16 bg-slate-50 border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-[#1f7a4c]">Consulenza Gratuita</span>
-        <h2 class="text-2xl font-extrabold text-[#0f2942] uppercase tracking-wider mt-1">Richiedi una Consulenza</h2>
+        <span class="text-xs font-bold uppercase tracking-widest text-[#135d66]">Consulenza Gratuita</span>
+        <h2 class="text-2xl font-extrabold text-[#1b5e8a] uppercase tracking-wider mt-1">Richiedi una Consulenza</h2>
         <p class="text-sm text-slate-600 mt-2">Compila il modulo per ricevere un'analisi gratuita delle tue forniture luce e gas.</p>
       </div>
 
       <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 rounded-xl border border-slate-200 border-t-4 border-t-[#d4a017] shadow-sm space-y-5">
         <input type="hidden" name="access_key" value="INSERISCI-LA-TUA-CHIAVE-QUI" />
-        <input type="hidden" name="subject" value="Nuovo contatto dal sito Welcome to Energy" />
+        <input type="hidden" name="subject" value="Nuovo contatto dal sito Rete Solare srl" />
 
         <div class="grid sm:grid-cols-2 gap-5">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-1.5">Nome e Cognome *</label>
-            <input type="text" name="name" required placeholder="Mario Rossi" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#0f2942] focus:outline-none" />
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-1.5">Nome e Cognome *</label>
+            <input type="text" name="name" required placeholder="Mario Rossi" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#1b5e8a] focus:outline-none" />
           </div>
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-1.5">Telefono *</label>
-            <input type="tel" name="phone" required placeholder="+39 333 0000000" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#0f2942] focus:outline-none" />
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-1.5">Telefono *</label>
+            <input type="tel" name="phone" required placeholder="+39 333 0000000" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#1b5e8a] focus:outline-none" />
           </div>
         </div>
 
         <div class="grid sm:grid-cols-2 gap-5">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-1.5">Email *</label>
-            <input type="email" name="email" required placeholder="nome@esempio.it" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#0f2942] focus:outline-none" />
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-1.5">Email *</label>
+            <input type="email" name="email" required placeholder="nome@esempio.it" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#1b5e8a] focus:outline-none" />
           </div>
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-1.5">Tipologia Cliente</label>
-            <select id="formTipologia" name="tipologia" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm bg-white focus:border-[#0f2942] focus:outline-none">
+            <label class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-1.5">Tipologia Cliente</label>
+            <select id="formTipologia" name="tipologia" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm bg-white focus:border-[#1b5e8a] focus:outline-none">
               <option value="Privato / Casa">Privato / Casa</option>
               <option value="Azienda / Partita IVA">Azienda / Partita IVA</option>
               <option value="Condominio">Condominio</option>
@@ -534,29 +535,29 @@
         </div>
 
         <div>
-          <label class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-1.5">Offerta o Servizio di Interesse</label>
-          <input id="formOfferta" type="text" name="offerta" placeholder="Es. Energy Pack Tutto in Uno, Analisi Bolletta, Voltura..." class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#0f2942] focus:outline-none" />
+          <label class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-1.5">Offerta o Servizio di Interesse</label>
+          <input id="formOfferta" type="text" name="offerta" placeholder="Es. Rete Solare Pack Tutto in Uno, Analisi Bolletta, Voltura..." class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#1b5e8a] focus:outline-none" />
         </div>
 
         <div>
-          <label class="block text-xs font-bold uppercase tracking-wider text-[#0f2942] mb-1.5">Messaggio</label>
-          <textarea id="formMessaggio" name="message" rows="3" placeholder="Scrivi qui la tua richiesta..." class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#0f2942] focus:outline-none"></textarea>
+          <label class="block text-xs font-bold uppercase tracking-wider text-[#1b5e8a] mb-1.5">Messaggio</label>
+          <textarea id="formMessaggio" name="message" rows="3" placeholder="Scrivi qui la tua richiesta..." class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#1b5e8a] focus:outline-none"></textarea>
         </div>
 
         <div id="formFeedback" class="hidden rounded-lg p-3.5 text-xs font-semibold"></div>
 
-        <button type="submit" class="bg-[#0f2942] hover:bg-[#1b436b] text-[#f0c44d] text-xs font-extrabold uppercase tracking-widest px-8 py-3.5 rounded-lg transition">
+        <button type="submit" class="bg-[#1b5e8a] hover:bg-[#2979ad] text-[#f0c44d] text-xs font-extrabold uppercase tracking-widest px-8 py-3.5 rounded-lg transition">
           Invia Richiesta
         </button>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER VERDE SMERALDO + BARRA BLU SCURO INFERIORE -->
+  <!-- FOOTER VERDE PETROLIO + BARRA BLU CHIARO INFERIORE -->
   <footer>
-    <div class="bg-[#1f7a4c] text-white py-14 border-t-4 border-[#d4a017]">
+    <div class="bg-[#135d66] text-white py-14 border-t-4 border-[#d4a017]">
       <div class="max-w-5xl mx-auto px-6">
-        <h3 class="text-lg font-bold mb-6 text-[#f0c44d]">Welcome to Energy</h3>
+        <h3 class="text-lg font-bold mb-6 text-[#f0c44d]">Rete Solare srl</h3>
         
         <div class="space-y-4 text-xs sm:text-sm text-white/95 leading-relaxed">
           <div>
@@ -566,21 +567,21 @@
 
           <div class="pt-2">
             <p>Lunedì - Venerdì 9:00 - 18:00</p>
-            <p>info@welcometoenergy.it</p>
+            <p>info@retesolaresrl.it</p>
             <p>Telefono: +39 000 0000000</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-[#0f2942] text-white py-5">
+    <div class="bg-[#1b5e8a] text-white py-5">
       <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-        <p>Copyright © 2026 <span class="text-[#f0c44d] font-semibold">Welcome to Energy</span></p>
+        <p>Copyright © 2026 <span class="text-[#f0c44d] font-semibold">Rete Solare srl</span></p>
         <div class="flex items-center gap-3">
-          <a href="#contatti" aria-label="Instagram" class="w-6 h-6 rounded bg-[#d4a017] text-[#0f2942] flex items-center justify-center hover:opacity-90 transition">
+          <a href="#contatti" aria-label="Instagram" class="w-6 h-6 rounded bg-[#d4a017] text-[#113d5a] flex items-center justify-center hover:opacity-90 transition">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-          <a href="#contatti" aria-label="LinkedIn" class="w-6 h-6 rounded bg-[#d4a017] text-[#0f2942] flex items-center justify-center hover:opacity-90 transition">
+          <a href="#contatti" aria-label="LinkedIn" class="w-6 h-6 rounded bg-[#d4a017] text-[#113d5a] flex items-center justify-center hover:opacity-90 transition">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
           </a>
         </div>
@@ -632,7 +633,6 @@
       document.getElementById('simKwhLabel').textContent = kwh + ' kWh';
       document.getElementById('simSmcLabel').textContent = smc + ' Smc';
 
-      // Percentuale indicativa di ottimizzazione in base al profilo e ai consumi
       const basePct = tipo === 'business' ? 0.16 : 0.14;
       const volumeBonus = Math.min(0.05, ((kwh / 1500) + (smc / 800)) * 0.025);
       const pctRisparmio = basePct + volumeBonus;
@@ -659,7 +659,7 @@
       document.getElementById('formOfferta').value = 'Simulazione (' + simKwh.value + ' kWh/mese, ' + simSmc.value + ' Smc/mese)';
       document.getElementById('formMessaggio').value =
         'Spesa mensile attuale indicativa: € ' + (parseFloat(simSpesa.value) || 0) +
-        '. Vorrei ricevere una verifica dettagliata.';
+        '. Vorrei ricevere una verifica dettagliata da Rete Solare srl.';
       document.getElementById('contatti').scrollIntoView({ behavior: 'smooth' });
     }
 
@@ -671,11 +671,11 @@
       btn.addEventListener('click', () => {
         const filter = btn.dataset.filter;
         filterButtons.forEach(b => {
-          b.classList.remove('bg-[#0f2942]', 'text-white');
-          b.classList.add('bg-slate-100', 'text-[#0f2942]');
+          b.classList.remove('bg-[#1b5e8a]', 'text-white');
+          b.classList.add('bg-slate-100', 'text-[#1b5e8a]');
         });
-        btn.classList.remove('bg-slate-100', 'text-[#0f2942]');
-        btn.classList.add('bg-[#0f2942]', 'text-white');
+        btn.classList.remove('bg-slate-100', 'text-[#1b5e8a]');
+        btn.classList.add('bg-[#1b5e8a]', 'text-white');
 
         offerCards.forEach(card => {
           const match = filter === 'all' || card.dataset.category === filter;
